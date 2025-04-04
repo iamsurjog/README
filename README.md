@@ -1,54 +1,59 @@
-# React + TypeScript + Vite
+# Modern Personal Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive "About Me" portfolio website with modern design elements, advanced CSS animations, and interactive JavaScript features.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Custom animated cursor
+- Responsive design that works on all devices
+- Advanced CSS animations and transitions
+- Interactive elements with JavaScript
+- Skill progress bars with animation
+- Project filtering system
+- Contact form with validation
+- Scrolling animations and effects
+- Modern UI with clean aesthetic
 
-## Expanding the ESLint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- HTML5
+- CSS3 (Custom animations, flex, grid, and media queries)
+- JavaScript (ES6+)
+- Font Awesome icons
+- Google Fonts
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## Project Structure
+
+```
+portfolio-website/
+│
+├── index.html          # Main HTML file
+├── css/
+│   └── styles.css      # CSS styles and animations
+├── js/
+│   └── script.js       # JavaScript functionality
+└── README.md           # Project documentation
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## How to Use
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+1. Clone or download this repository
+2. Open `index.html` in your browser to view the website
+3. Customize the content in `index.html` to make it your own
+4. Modify styles in `styles.css` to match your personal brand
+5. Update the JavaScript functionality in `script.js` as needed
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## Customization
+
+- Replace the placeholder images with your own photos
+- Update the personal information in the About section
+- Add your own projects to the Projects section
+- Customize the color scheme by modifying the CSS variables in the `:root` selector
+
+## License
+
+Feel free to use this template for your personal portfolio website.
+
+## Preview
+
+Open `index.html` in your browser to see the website in action.
