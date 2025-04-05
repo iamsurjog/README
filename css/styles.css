@@ -61,12 +61,17 @@ ul {
     list-style: none;
 }
 
+h2{
+    padding-right: 2rem;
+}
+
 img {
     max-width: 100%;
     height: auto;
 }
 
 .highlight {
+    padding-right: 2rem;
     color: var(--primary-color);
     position: relative;
     display: inline-block;
