@@ -297,3 +297,23 @@ window.addEventListener('load', () => {
     // After everything is loaded, add a class to the body to enable transitions
     document.body.classList.add('loaded');
 });
+
+// Theme toggle
+const themeToggle = document.getElementById('theme-toggle');
+
+// Check for saved user preference, if any, on load
+const savedTheme = localStorage.getItem('theme');
+if (savedTheme === 'dark') {
+  document.body.classList.add('dark-theme');
+  themeToggle.checked = true;
+}
+
+themeToggle.addEventListener('change', function() {
+  if (this.checked) {
+    document.body.classList.add('dark-theme');
+    localStorage.setItem('theme', 'dark');
+  } else {
+    document.body.classList.remove('dark-theme');
+    localStorage.setItem('theme', 'light');
+  }
+});
