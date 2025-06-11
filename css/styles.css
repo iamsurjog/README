@@ -1001,15 +1001,3 @@ footer {
 .theme-toggle-input:checked + .theme-toggle-label .theme-icon .moon {
   display: block;
 }
-
-@media (prefers-color-scheme: dark) {
-  body:not(.dark-theme):not(.light-theme) {
-    --primary-color: #7b75ff;
-    --secondary-color: #ff407a;
-    --dark-color: #f8f9fa;
-    --light-color: #1e1e1e;
-    --gray-color: #aaa;
-    --border-color: #444;
-    --box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
-  }
-}
